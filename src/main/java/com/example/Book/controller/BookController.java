@@ -31,7 +31,7 @@ public class BookController {
     @GetMapping("/{id}")
     public ResponseEntity<?> getBookById(@PathVariable Long id) throws Exception {
         Optional<Book> book = bookService.getBookById(id);
-        System.out.println("hi");
+        System.out.println("hii");
         if (book.isPresent())
         {
             return ResponseEntity.ok().body(book.get());
